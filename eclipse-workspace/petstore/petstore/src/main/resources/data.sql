@@ -1,0 +1,10 @@
+insert into amenity (amenity) values ('');
+insert into amenity (amenity) values ('');
+insert into amenity (amenity) values ('');
+insert into amenity (amenity) values ('');
+insert into amenity (amenity) values ('');
+insert into amenity (amenity) values ('');
+insert into amenity (amenity) values ('');
+insert into amenity (amenity) values ('');
+insert into amenity (amenity) values ('');
+insert into amenity (amenity) values ('');
