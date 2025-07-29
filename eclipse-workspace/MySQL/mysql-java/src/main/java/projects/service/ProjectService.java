@@ -1,6 +1,7 @@
 package projects.service;
 
 import projects.entity.Project;
+import projects.exception.DbException;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -19,6 +20,17 @@ public class ProjectService {
 	public List<Project> fetchAllProjects() {
 		// TODO Auto-generated method stub
 		return projectDao.fetchAllProjects();
+	}
+	public void deleteProject(Integer projectId) {
+		if (!projectDao.deleteProject(projectId)) {
+			throw new DbException("Project with Id =" + projectId + "does not exist.");	
+		}
+		
+	}
+	public void modifyProjectDetails(Project project) {
+		if (!projectDao.modifyProjectDetails(project)) {
+			throw new DbException("Project with Id =" + project.getProjectId() + "does not exist.");	
+		}
 	}
 	
 	

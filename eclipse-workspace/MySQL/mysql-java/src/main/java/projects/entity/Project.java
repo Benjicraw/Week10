@@ -1,16 +1,11 @@
-/**
- * 
- */
+
 package projects.entity;
 
 import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @author Promineo
- *
- */
+
 public class Project {
   private Integer projectId;
   private String projectName;
